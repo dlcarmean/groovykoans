@@ -1,3 +1,4 @@
+// vim: ai sm sw=4 ts=4 et
 /*
  * Copyright (c) 2012-2014 nadavc <https://twitter.com/nadavc>
  * This work is free. You can redistribute it and/or modify it under the
@@ -8,21 +9,34 @@
 import java.awt.*
 import java.util.List
 
+/*
 apply plugin: 'groovy'
-apply from: 'gradle/idea.gradle'
-apply from: 'gradle/eclipse.gradle'
+*/
+
+plugins {
+    id 'groovy'
+}
+
+//apply from: 'gradle/idea.gradle'
+//apply from: 'gradle/eclipse.gradle'
+
 
 version = '0.5'
 
 repositories {
-    jcenter()
+    //jcenter()
+    mavenCentral()
 }
 
 dependencies {
-    def groovyComponents = ['groovy', 'groovy-ant', 'groovy-sql', 'groovy-test']
-    testCompile groovyComponents.collect { "org.codehaus.groovy:$it:2.4.3" }
-    testCompile 'com.h2database:h2:1.3.168'
-    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+//    def groovyComponents = ['groovy', 'groovy-ant', 'groovy-sql', 'groovy-test']
+//  testCompile groovyComponents.collect { "org.codehaus.groovy:$it:2.4.3" }
+//  testCompile 'com.h2database:h2:1.3.168'
+//  testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    implementation 'com.google.guava:guava:30.1.1-jre'
+    testImplementation 'org.spockframework:spock-core:2.0-groovy-3.0'
+    testImplementation 'junit:junit:4.13.2'
+
 }
 
 task removeSolutions {
@@ -54,12 +68,13 @@ tasks.addRule('Pattern: koan<Number>: Runs a single Koan') { String taskName ->
         }
     }
 }
-
+/*
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.8'
+    gradleVersion = '7.3.1'
 }
-
+*/
 // show welcome message
+/*
 task sayHello << {
     List<String> lines = file('gradle/one-liners.txt').readLines()
     def quote = lines.get(new Random().nextInt(lines.size() - 1))
@@ -68,7 +83,7 @@ task sayHello << {
 }
 
 test.dependsOn sayHello
-
+*/
 // launch browser if test failed. otherwise show that koan is complete
 gradle.taskGraph.afterTask { task, taskState ->
     if (task.name != 'test')
