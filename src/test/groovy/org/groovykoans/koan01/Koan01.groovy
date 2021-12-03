@@ -18,7 +18,7 @@ package org.groovykoans.koan01
  *   http://docs.groovy-lang.org/latest/html/groovy-jdk/java/util/List.html
  *   http://docs.groovy-lang.org/latest/html/documentation/index.html#groovy-operators
  */
-class Koan01 extends GroovyTestCase {
+class Koan01 extends groovy.test.GroovyTestCase {
 
     void test01_AssertionsAndSomeSyntax() {
         // Groovy introduces the GroovyTestCase for testing. We are using it as the base class for our unit tests.

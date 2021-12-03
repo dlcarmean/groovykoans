@@ -17,7 +17,7 @@ package org.groovykoans.koan06
  *   * http://docs.groovy-lang.org/latest/html/groovy-jdk/java/io/File.html#eachFileRecurse(groovy.lang.Closure)
  *   * http://docs.groovy-lang.org/latest/html/groovy-jdk/java/lang/Object.html
  */
-class Koan06 extends GroovyTestCase {
+class Koan06 extends groovy.test.GroovyTestCase {
 
     void test01_WithMethod() {
         // The 'with()' method [ http://docs.groovy-lang.org/latest/html/groovy-jdk/java/lang/Object.html#with(groovy.lang.Closure) ]

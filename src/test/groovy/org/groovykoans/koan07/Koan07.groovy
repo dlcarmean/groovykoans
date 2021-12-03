@@ -20,7 +20,7 @@ import java.util.regex.Pattern
  *   * http://naleid.com/blog/2009/04/07/groovy-161-released-with-new-find-and-findall-regexp-methods-on-string/
  *   * http://www.ngdc.noaa.gov/wiki/index.php/Regular_Expressions_in_Groovy#The_eXtended_Pattern_Match_Flag_.28x.29
  */
-class Koan07 extends GroovyTestCase {
+class Koan07 extends groovy.test.GroovyTestCase {
 
     void test01_SimpleRegularExpression() {
         // First we must understand regular expressions. There's a nice tutorial at

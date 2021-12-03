@@ -17,7 +17,7 @@ package org.groovykoans.koan12
  *   * http://docs.groovy-lang.org/latest/html/documentation/index.html#_mocking_and_stubbing
  *
  */
-class Koan12 extends GroovyTestCase {
+class Koan12 extends groovy.test.GroovyTestCase {
 
 
     void test01_ShouldFail() {

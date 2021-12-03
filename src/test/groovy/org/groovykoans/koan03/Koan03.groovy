@@ -14,7 +14,7 @@ package org.groovykoans.koan03
  *   http://docs.groovy-lang.org/latest/html/documentation/#_class
  *   http://mrhaki.blogspot.com/2009/09/groovy-goodness-parameters-with-default.html
  */
-class Koan03 extends GroovyTestCase {
+class Koan03 extends groovy.test.GroovyTestCase {
 
     void test01_IntroToGroovyBeans() {
         // JavaBeans (or POJOs) are simple Java objects with getters (getX) and setters (setX) for its members

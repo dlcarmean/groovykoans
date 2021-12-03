@@ -13,7 +13,7 @@ package org.groovykoans.koan08
  * Resource list:
  *   * http://docs.groovy-lang.org/latest/html/documentation/index.html#_switch_case
  */
-class Koan08 extends GroovyTestCase {
+class Koan08 extends groovy.test.GroovyTestCase {
 
     void test01_SwitchStatements() {
         // Some people consider switch-case clauses to be a code smell because the same behavior can be

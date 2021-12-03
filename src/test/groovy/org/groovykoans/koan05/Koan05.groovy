@@ -15,7 +15,7 @@ package org.groovykoans.koan05
  *  http://groovy-lang.org/groovy-dev-kit.html#_working_with_collections
  *  http://docs.groovy-lang.org/latest/html/groovy-jdk/java/lang/Object.html#eachWithIndex(groovy.lang.Closure)
  */
-class Koan05 extends GroovyTestCase {
+class Koan05 extends groovy.test.GroovyTestCase {
 
     void test01_IterateWithEach() {
         def products = ['GitHub', 'Confluence', 'Hipmunk', 'Outlook']

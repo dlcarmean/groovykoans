@@ -20,7 +20,7 @@ import java.sql.PreparedStatement
  *   * http://docs.groovy-lang.org/latest/html/api/groovy/sql/DataSet.html
  *
  */
-class Koan11 extends GroovyTestCase {
+class Koan11 extends groovy.test.GroovyTestCase {
     final String CREATE_STMT = '''|create table PERSON (
                                   |    ID INT PRIMARY KEY AUTO_INCREMENT,
                                   |    FIRSTNAME VARCHAR(64), LASTNAME VARCHAR(64)

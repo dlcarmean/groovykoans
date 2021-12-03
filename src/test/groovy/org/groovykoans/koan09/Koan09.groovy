@@ -20,7 +20,7 @@ package org.groovykoans.koan09
  *   * http://www.codinghorror.com/blog/2007/02/why-cant-programmers-program.html,
  *
  */
-class Koan09 extends GroovyTestCase {
+class Koan09 extends groovy.test.GroovyTestCase {
 
     void test01_Expando() {
         // So far we haven't dealt with the dynamic nature of Groovy. What does dynamic mean? It means

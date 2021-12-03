@@ -12,7 +12,7 @@ package org.groovykoans.koan02
  *
  * In order to improve code readability, Groovy can also treats regular expressions as booleans.
  */
-class Koan02 extends GroovyTestCase {
+class Koan02 extends groovy.test.GroovyTestCase {
 
     void test01_RegularBooleanExpressions() {
         // Boolean expressions work as expected. true evaluates to true and false to false.

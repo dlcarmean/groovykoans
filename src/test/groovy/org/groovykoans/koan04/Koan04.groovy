@@ -16,7 +16,7 @@ package org.groovykoans.koan04
  *   http://docs.groovy-lang.org/latest/html/groovy-jdk/java/io/File.html
  *   http://docs.groovy-lang.org/latest/html/groovy-jdk/java/lang/String.html
  */
-class Koan04 extends GroovyTestCase {
+class Koan04 extends groovy.test.GroovyTestCase {
 
     void test01_IntroToClosures() {
         // Closures are probably the most important feature Groovy has to offer. Unfortunately, they're
